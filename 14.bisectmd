@@ -6,3 +6,25 @@ git bisect bad failed-commit-id
 git bisect good passed-commit-id-some-stpes-before
 
 ```
+
+#### Chery pick 
+
+- it helps to move previous state 
+
+```
+git checkout your-branch
+git checkout previous-passed-cut-commit-id
+
+git checkout -b bugfixbranch
+# let us do some changes in code
+git add .
+git commit -m "new bug fixed"
+get cherry-pick required-commit-id
+
+git checkout your-branch
+git checkout required-commit-id
+
+```
+
+
+
