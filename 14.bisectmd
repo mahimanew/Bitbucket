@@ -1,0 +1,8 @@
+- It helps to identify(troubleshoot) the good and bad commit when an application fails.
+
+```
+git bisect start
+git bisect bad failed-commit-id
+git bisect good passed-commit-id-some-stpes-before
+
+```
